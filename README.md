@@ -8,7 +8,7 @@ rails new devise-password-archivable
 
 ```
 
-## Devise
+### Devise
 
 Add devise gem
 ```
@@ -49,7 +49,7 @@ rails db:create db:migrate
 
 ```
 
-## Devise security extension
+### Devise security extension
 
 ```
 
@@ -73,7 +73,7 @@ devise :database_authenticatable, :registerable,
 
 ```
 
-## Devise security extension configuration
+### Devise security extension configuration
 
 Uncomment following configuration lines in the path,
  config/initializers/devise_security_extension.rb
@@ -96,7 +96,7 @@ end
 
 ```
 
-## Create Old Password Table
+### Create Old Password Table
 
 ```
 
@@ -116,7 +116,7 @@ class CreateOldPasswordsTable < ActiveRecord::Migration[5.2]
 	  t.integer :password_archivable_id, :null => false
 	  t.datetime :created_at
 	end
-	
+
 	add_index :old_passwords, [:password_archivable_type, :password_archivable_id], :name => :index_password_archivable
   end
 end
@@ -131,7 +131,7 @@ rails db:migrate
 
 ```
 
-## Then start rails server,
+### Then start rails server
 
 ```
 

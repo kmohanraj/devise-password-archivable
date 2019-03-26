@@ -1,4 +1,4 @@
-## Devise Password Archivable
+# Devise Password Archivable
 
 
 Create rails app,
@@ -8,7 +8,7 @@ rails new devise-password-archivable
 
 ```
 
-# Devise
+## Devise
 
 Add devise gem
 ```
@@ -31,6 +31,16 @@ rails g devise user
 
 ```
 
+Then add authenticate_user to,
+
+app/controllers/application_controller.rb
+```
+
+before_action :authenticate_user!
+
+
+```
+
 
 Then create and migrate database table,
 ```
@@ -39,7 +49,7 @@ rails db:create db:migrate
 
 ```
 
-# Devise security extension
+## Devise security extension
 
 ```
 
@@ -63,7 +73,7 @@ Add password archivable to devise model,
 
 ```
 
-# Devise security extension configuration
+## Devise security extension configuration
 
 Uncomment following configuration lines in the path,
  config/initializers/devise_security_extension.rb
@@ -86,7 +96,7 @@ end
 
 ```
 
-# Create Old Password Table
+## Create Old Password Table
 
 ```
 

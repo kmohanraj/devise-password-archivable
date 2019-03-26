@@ -68,8 +68,8 @@ Add password archivable to devise model,
 
 ```
 
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :password_archivable
+devise :database_authenticatable, :registerable,
+       :recoverable, :rememberable, :validatable, :password_archivable
 
 ```
 
@@ -116,6 +116,7 @@ class CreateOldPasswordsTable < ActiveRecord::Migration[5.2]
 	  t.integer :password_archivable_id, :null => false
 	  t.datetime :created_at
 	end
+	
 	add_index :old_passwords, [:password_archivable_type, :password_archivable_id], :name => :index_password_archivable
   end
 end
@@ -130,6 +131,13 @@ rails db:migrate
 
 ```
 
+## Then start rails server,
+
+```
+
+rails s 
+
+```
 
 
 

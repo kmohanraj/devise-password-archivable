@@ -1,5 +1,6 @@
 # Devise Password Archivable
 
+:password_archivable - save used passwords in an old_passwords table for history checks (don't be able to use a formerly used password)
 
 Create rails app,
 ```
@@ -139,6 +140,24 @@ rails s
 
 ```
 
+### Available Libraries,
+```
 
+gem 'devise_security_extension'
+gem 'devise_security'
+gem 'devise-pwned_password'
+
+```
+
+[! 
+https://github.com/phatworx/devise_security_extension/blob/master/README.md
+http://tech.eshaiju.in/blog/2015/01/13/password-policy-implemenation-with-devise-and-devise-security-extension/
+
+https://github.com/olbrich/devise-security
+
+https://github.com/plataformatec/devise/wiki/How-To:-Disallow-previously-used-passwords
+
+
+]
 
 

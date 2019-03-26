@@ -149,15 +149,5 @@ gem 'devise-pwned_password'
 
 ```
 
-[! 
-https://github.com/phatworx/devise_security_extension/blob/master/README.md
-http://tech.eshaiju.in/blog/2015/01/13/password-policy-implemenation-with-devise-and-devise-security-extension/
-
-https://github.com/olbrich/devise-security
-
 https://github.com/plataformatec/devise/wiki/How-To:-Disallow-previously-used-passwords
-
-
-]
-
 
